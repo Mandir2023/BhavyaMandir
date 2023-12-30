@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MahaKaleshwar</title>
+    <link rel="icon" href="icon1.png" style="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('backimg2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            z-index: -6;
+        }
+        /* header items-start */
+        header {
+            background-color: white;
+            height: 78px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.3);
+        }
+        .mandirpic{
+            height: 100%;
+            width: 100px;
+            margin-bottom: 24px;
+        }
+        .apnamandir{
+            user-select: none;
+            margin-left: 1%;
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            letter-spacing: 3.1px;
+            
+        
+        }
+        .button-container, .dropdown {
+            float: right;
+            }
+        .search{
+            background-color: transparent;
+            border-color: black;
+            border-style: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .button {
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 4.5px; 
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 29px;
+            padding-bottom: 30px;
+            color: black;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: #e0ac1c;
+            background-color: #dedede;
+            transition: 0.2s all ease-in-out 0.1s;
+        }
+        /* header-end */
+        .backgroundpic{
+            height: 100%;
+            width: 100%;
+            opacity: 0.8;
+            
+        }
+        .scrolldown:hover{
+            color: #e0ac1c;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        /* dropdown signup of header-start */
+        #dropbtn {
+  border: none;
+}
+
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 400px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #3f71ea;
+}
+
+.footer-links a:hover {
+  color: #3f71ea;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+
+.badrin_img{
+    max-width: 450px;
+    float: right;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 90px;
+}
+.badrin{
+    margin:50px auto;
+    width: 90%;
+}
+.badrin2{
+    margin:50px auto;
+    width: 90%;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+}
+.badrin_img2{
+    max-width: 450px;
+    height: 450px;
+    float: left;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 0;
+}
+.text_box p{
+    text-align: left;
+    font-size: 20px;
+}
+.text_box2{
+    align-items: start;
+    justify-content: left;
+    background-color: #2c3e50;
+    color: white;
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+}
+.text_box2 p{
+    font-size: 20px;
+}
+/* badrinath */
+
+p{
+    line-height: 1.8;
+}
+h4{
+    font-weight:550;
+}
+
+.title h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 70px;   
+} 
+h3{
+    font-weight:bold;
+    
+}
+.title2 h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold; 
+}
+.text_box3{
+    background-color: #2c3e50;
+    color: white;
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+}
+.badrin_img3{
+    float: right;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 90px;
+}
+
+li{
+    font-size: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://www.mahalaxmimandirpune.org/img/logos/MahalaxmiMandirLogo.png" class="mandirpic">
+        <b class="apnamandir">APNA <font color="e0ac1c">MANDIR</font> </b>
+        <div class="button-container">
+            <input type="text" placeholder="Search Mandir.." class="search">
+            <button class="button">HOME</button>
+            <button class="button">ABOUT</button>
+            <button class="button"><a href='#map'>DIRECTIONS</a></button>
+            <button class="button"><a href='#contact' class="scrolldown">CONTACT</a></button>
+        </div>
+    </header>
+
+    <!-- Badrinath Description -->
+    <div class="title">
+        <h1>Shree MahaKaleshwar</h1>
+    </div>
+
+    <div class="badrin">
+      <!-- drive link- https://drive.google.com/uc?export=download&id=1UFViAT8reVHnmo8B2GwAu2dqelWhQywM  -->
+    <img class="badrin_img" src="mk1.jpg">
+    <div class="text_box">
+    <p class="text">Mahakaleshwar is one of the twelve Jyotirlingas, a revered Hindu shrine dedicated to Lord Shiva, situated in Ujjain, Madhya Pradesh, India. The temple is known for its unique idol of Lord Shiva, which faces south, and its significance as a sacred pilgrimage site. Devotees believe that Mahakaleshwar is a powerful manifestation of Lord Shiva and seek blessings for spiritual well-being. The temple also holds the distinction of being one of the seven Moksha-puris in Hindu tradition.</p><br>
+    <h3>Importance and Religious Significance</h3><br>
+    <h4>Mahakaleshwar Mandir</h4>
+    <p>The Mahakaleshwar Temple, a jewel in the crown of Ujjain, Madhya Pradesh, transcends architectural grandeur to stand as a potent symbol of devotion and ancient mystique. As one of the twelve revered Jyotirlingas, dedicated to Lord Shiva, it draws pilgrims from all corners of India, eager to bask in its sacred aura.
+
+        Though shrouded in the mists of time, its origins are believed to stretch back to the 6th century BC. Standing tall on the banks of the Shipra River, its red sandstone walls whisper tales of a glorious past, etched in intricate carvings. The innermost sanctum sanctorum houses the self-manifested (Swayambhu) lingam of Lord Mahakaleshwar, pulsating, it's said, with life-giving energy. The unique south-facing direction of the sanctum symbolizes Shiva's triumph over time and mortality.
+        <br>
+        Beyond its spiritual significance, the Mahakaleshwar Temple hums with the rhythm of daily life. Devotees throng its corridors, seeking blessings and offering prayers. The dawn Bhasma Aarti, a mesmerizing ritual using ashes from cremation grounds, is a sight that leaves one spellbound. The temple resonates with chants, the chime of bells, and the fragrant smoke of incense, creating an atmosphere of profound devotion.
+        <br>
+        Whether you seek spiritual solace or marvel at the wonders of ancient architecture, the Mahakaleshwar Temple promises an experience that stays with you. It's a place where history whispers from every stone, and faith finds its anchor in the divine presence of Lord Mahakaleshwar.
+        </p>
+        <br>
+        
+        <h4>Pilgrimage Season</h4>
+    <p>The pilgrimage season of Mahakaleshwar typically peaks during the Hindu month of Shravan, which usually falls between July and August in the Gregorian calendar. During this time, special religious events, rituals, and festivals attract a large number of devotees to the Mahakal temple in Ujjain.</p>
+    
+    <h3>Geography and Surroundings</h3><br>
+    <h4>Scenic Beauty</h4>
+    <p>Nestled in Ujjain, the Mahakaleshwar temple boasts a scenic setting with the Shipra River flowing nearby, surrounded by ancient architecture and serene landscapes. Devotees are greeted by a tranquil ambiance that enhances the spiritual experience amidst the historical and natural beauty of the region.
+
+
+
+
+
+
+    </p>
+    <h4>Pahalgam Village</h4>
+    <p>Nestled near the Mahakaleshwar temple, the quaint village of Chintamani envelops visitors in its scenic embrace, with residents like the warmth of the Bhargav family and the tranquil simplicity of the Sharma hamlet, creating a close-knit community amidst the timeless beauty of rural life.</p>
+    </div>
+    </div>
+
+    <div class="badrin2">
+      <!-- drive link= https://drive.google.com/uc?export=download&id=1K6sWX3G1VWUoeNYnv1XbHAuIqQANioDi -->
+       <div class="photo"><img class="badrin_img2" src="am2.jpg"></div> 
+        <div class="text_box2">
+        <h3 class="text_h3">Travel Information</h3><br>
+        <h4 class="text_h3">Accessibility</h4>
+        <p>Access to Amarnath is primarily through Pahalgam or Baltal, with Pahalgam serving as a base camp. The region is accessible by road from Srinagar, and during the pilgrimage season, special arrangements, including helicopter services, facilitate transportation for devotees. While the journey involves challenging treks, the stunning Himalayan landscapes make the pilgrimage an adventurous and spiritually significant experience.</p><br>
+        <h4 class="text_h3">Accommodation</h4>
+        <p>Accommodation near Amarnath is available in base camps like Pahalgam, offering a range of options from tents to guesthouses. During the pilgrimage season, temporary camps and government-provided facilities accommodate the influx of devotees. Pilgrims can choose from various lodging options, ensuring a comfortable stay amidst the scenic Himalayan surroundings.
+
+        </p><br>
+        <h4 class="text_h3">Local Cuisine and Culture</h4>
+        <p>The local cuisine around Amarnath reflects the rich flavors of Kashmir, with specialties like Rogan Josh, Yakhni, and Kashmiri Pulao. The culture is deeply influenced by Kashmiri traditions, featuring vibrant handicrafts, traditional music, and festivals, contributing to a unique and immersive cultural experience for pilgrims and visitors alike.</p>
+    
+        </div>
+        </div>
+        <hr>
+        <div class="title2" id="map">
+          <h1>Situated</h1>
+        </div>
+          <div class="badrin">
+            <iframe class="badrin_img3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.6826613724156!2d75.50154517518418!3d34.215696209082786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e24fca96056755%3A0xdfd15d625912515e!2sShri%20Amarnath%20Cave%20Temple!5e1!3m2!1sen!2sin!4v1703840287759!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Amarnath"></iframe>              
+            <div class="text_box3">
+              <h3>Geographical Location:</h3><br>
+              <p><b>Coordinates:</b> Latitude: 34.1641° N, Longitude: 77.5820° E.<br>
+                <b>Altitude:</b> Approximately 3,888 meters (12,756 feet) above sea level.</p>
+            </div>
+            </div>
+    
+
+
+
+
+
+
+
+
+
+    <!-- Content goes here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        document.getElementById('scrolldown').addEventListener('click', function () {
+            document.getElementById('footer-distributed').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <!-- Footer -->
+    <section id="contact">
+    <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>Apna<span>Mandir</span></h3>
+  
+          <p class="footer-links">
+            <a href="#">Home</a>
+            |
+            <a href="#">About</a>
+            |
+            <a href="#">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">
+            Copyright © 2021 <strong>ApnaMandir</strong> All rights reserved
+          </p>
+        </div>
+  
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>UttarPradesh</span> Agra</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 74*9*258</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mitanshushamra31@gmail.com">Jaihind@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>Apna Mandir</strong> Apna Mandir is a digital sanctuary
+            celebrating cultural heritage and spiritual practices
+          </p>
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
